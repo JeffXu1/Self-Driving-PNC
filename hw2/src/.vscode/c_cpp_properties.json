@@ -1,0 +1,20 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/vts/steve777/shenlan_pnc/catkin_lgsvl/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/vts/steve777/shenlan_pnc/catkin_lgsvl/src/vehicle_control/include/**",
+        "/home/vts/steve777/shenlan_pnc/catkin_lgsvl/src/stanley_control/include/**",
+        "/home/vts/steve777/shenlan_pnc/catkin_lgsvl/src/lqr_control/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}
