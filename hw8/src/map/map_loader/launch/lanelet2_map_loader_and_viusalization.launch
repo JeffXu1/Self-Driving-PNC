@@ -1,0 +1,21 @@
+<launch>
+  <arg name="file_name" default="$(find map_loader)/data/lanelet2_map.osm"/>
+  <arg name="lanelet2_map_topic" default="vector_map"/>
+  <arg name="lanelet2_map_marker_topic" default="vector_map_marker"/>
+
+  <node pkg="map_loader" type="lanelet2_map_loader" name="lanelet2_map_loader" args="$(arg file_name)">
+    <remap from="~output/lanelet2_map" to="$(arg lanelet2_map_topic)" />
+  </node>
+
+  <node pkg="map_loader" type="lanelet2_map_visualization" name="lanelet2_map_visualization">
+    <remap from="~input/lanelet2_map" to="$(arg lanelet2_map_topic)" />
+    <remap from="~output/lanelet2_map_marker" to="$(arg lanelet2_map_marker_topic)" />
+  </node>
+
+   <!-- <node pkg="tf" type="static_transform_publisher" name="hd_map" args="3788.443 73760.386 0 0 0 0 /map /base_link 100" /> -->
+
+  <!--- Run Rviz-->
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find map_loader)/loader.rviz" />
+
+
+</launch>

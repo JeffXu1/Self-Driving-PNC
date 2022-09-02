@@ -1,0 +1,30 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/hy/shenlan_ws/devel/include/**",
+        "/home/hy/simulation_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/hy/shenlan_ws/src/simulator/util/dummy_perception_publisher/include/**",
+        "/home/hy/shenlan_ws/src/lanelet2_extension/include/**",
+        "/home/hy/shenlan_ws/src/map/map_loader/include/**",
+        "/home/hy/shenlan_ws/src/mission_planner/include/**",
+        "/home/hy/simulation_ws/src/turtlebot3/open_manipulator/open_manipulator_moveit/include/**",
+        "/home/hy/shenlan_ws/src/simulator/simple_planning_simulator/include/**",
+        "/home/hy/simulation_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_fake/include/**",
+        "/home/hy/simulation_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
